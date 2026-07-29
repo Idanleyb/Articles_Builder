@@ -1,5 +1,3 @@
-# Articles_Builder
-Agent for creating Fintech / Music and Marketing articles based on new innovations and ideas in the market. 
 # Signal Tracker
 
 A daily pipeline that scans Music, Fintech, and AI Marketing & Growth for new
@@ -33,8 +31,50 @@ article-writing skill.
 | `fetch_and_score.py` | Daily pipeline: fetch → classify → score → write `data.json` |
 | `generate_sample_data.py` | Produces placeholder `data.json` for testing the dashboard without API keys |
 | `dashboard.html` | The web app — open directly in a browser |
+| `write_articles.py` | Monday/Wednesday pipeline: select item(s) → generate article via the tone guide → append to Google Doc |
+| `selected_for_writing.json` | Edit this before a run to hand-pick which item(s) to write about; leave empty for auto-pick |
+| `written_log.json` | Auto-maintained record of what's already been written about (prevents repeats) |
 | `requirements.txt` | Python dependencies |
-| `.github/workflows/daily_run.yml` | Runs the pipeline daily via GitHub Actions |
+| `.github/workflows/daily_run.yml` | Runs the tracker pipeline daily |
+| `.github/workflows/writer_run.yml` | Runs the article writer every Monday and Wednesday |
+
+## Article Writer (twice-weekly)
+
+Every Monday and Wednesday, `write_articles.py`:
+1. Reads `selected_for_writing.json` — if you've pasted item name(s) from the
+   dashboard's Article Queue in there, those are used. Otherwise it falls back
+   to the single highest-scoring item that hasn't already appeared in
+   `written_log.json`.
+2. Generates the article using the tone/voice rules from the `article-writer`
+   skill (technical-marketer lens, musician's mindset, no hype, LinkedIn
+   formatting, SEO in the opening lines, GEO-friendly clear claims).
+3. Appends the finished article to a shared Google Doc, with a date/source
+   header so multiple articles stack cleanly over time.
+4. Logs what was written and clears the selection file.
+
+### Additional secrets needed
+
+| Secret | Required | Notes |
+|---|---|---|
+| `GOOGLE_SERVICE_ACCOUNT_JSON` | Yes | Full contents of the service account's downloaded JSON key |
+| `GOOGLE_DOC_ID` | Yes | The ID from the doc's URL: `docs.google.com/document/d/THIS_PART/edit` |
+
+### One-time Google Cloud setup
+1. **console.cloud.google.com** → create or select a project
+2. Enable the **Google Docs API** and **Google Drive API**
+3. **IAM & Admin → Service Accounts → Create Service Account**
+4. On the new service account, **Keys → Add Key → Create new key → JSON** — downloads a `.json` file
+5. Create (or pick) the Google Doc articles should land in, click **Share**,
+   and share it with the service account's email (looks like
+   `name@project-id.iam.gserviceaccount.com`) with **Editor** access
+6. Copy the entire downloaded JSON file's contents into the
+   `GOOGLE_SERVICE_ACCOUNT_JSON` secret, and the doc's ID into `GOOGLE_DOC_ID`
+
+### Picking what gets written about
+Open `selected_for_writing.json`, add the exact `name` value(s) from the
+dashboard's Article Queue to `selected_names`, and commit before Monday/Wednesday's
+scheduled run (or trigger the workflow manually via **Actions → Monday/Wednesday
+Article Writer → Run workflow** right after selecting).
 
 ## Scoring weights
 
