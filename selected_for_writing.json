@@ -1,0 +1,4 @@
+{
+  "_instructions": "Before a Monday/Wednesday run, paste the exact 'name' field of one or more items from the dashboard's Article Queue into the list below, then commit. The writer script matches against the latest data.json, generates the article(s), and clears this list automatically after a successful run. If left empty, the script falls back to auto-picking the single highest-scoring item that hasn't been written about yet.",
+  "selected_names": []
+}
