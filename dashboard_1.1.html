@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signal — Innovation Tracker</title>
+<style>
+  :root{
+    --navy-950:#070d1a;
+    --navy-900:#0c1526;
+    --navy-800:#121e35;
+    --navy-700:#1a2c4a;
+    --navy-600:#28406b;
+    --amber:#f0a93b;
+    --amber-dim:#8a6323;
+    --text-hi:#eef2f8;
+    --text-mid:#9fb0c8;
+    --text-low:#5f7291;
+    --green:#5fbf8f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--navy-950);
+    color:var(--text-hi);
+    font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif;
+    min-height:100vh;
+  }
+  .mono{font-family:'SF Mono','Consolas','Menlo',monospace;}
+
+  header{
+    padding:28px 32px 20px;
+    border-bottom:1px solid var(--navy-700);
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  header .brand{display:flex; align-items:baseline; gap:14px;}
+  header h1{
+    margin:0;
+    font-size:26px;
+    letter-spacing:0.02em;
+    font-weight:600;
+  }
+  header h1 .dot{color:var(--amber);}
+  header .tagline{
+    font-family:'SF Mono','Consolas',monospace;
+    color:var(--text-low);
+    font-size:11.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+  }
+  header .meta{
+    font-family:'SF Mono','Consolas',monospace;
+    font-size:11px;
+    color:var(--text-low);
+    text-align:right;
+  }
+  header .meta .n{color:var(--amber); font-size:14px;}
+
+  .bar{
+    display:flex;
+    gap:8px;
+    padding:16px 32px;
+    flex-wrap:wrap;
+    align-items:center;
+    border-bottom:1px solid var(--navy-800);
+  }
+  .tab{
+    font-family:'SF Mono','Consolas',monospace;
+    font-size:12px;
+    letter-spacing:0.03em;
+    padding:7px 14px;
+    border-radius:3px;
+    border:1px solid var(--navy-700);
+    background:transparent;
+    color:var(--text-mid);
+    cursor:pointer;
+    transition:all .15s ease;
+  }
+  .tab:hover{border-color:var(--amber-dim); color:var(--text-hi);}
+  .tab.active{background:var(--navy-700); border-color:var(--amber); color:var(--amber);}
+  .spacer{flex:1;}
+  .sortlabel{font-family:'SF Mono',monospace; font-size:11px; color:var(--text-low); margin-right:6px;}
+  select{
+    font-family:'SF Mono',monospace;
+    font-size:12px;
+    background:var(--navy-800);
+    color:var(--text-hi);
+    border:1px solid var(--navy-700);
+    padding:6px 10px;
+    border-radius:3px;
+  }
+
+  main{padding:24px 32px 60px; max-width:1180px; margin:0 auto;}
+
+  .grid{display:flex; flex-direction:column; gap:10px;}
+
+  .row{
+    display:grid;
+    grid-template-columns:170px 1fr 190px 96px;
+    gap:20px;
+    align-items:center;
+    background:var(--navy-900);
+    border:1px solid var(--navy-800);
+    border-left:3px solid var(--navy-700);
+    border-radius:4px;
+    padding:16px 18px;
+  }
+  .row.worthy{border-left-color:var(--amber);}
+
+  .tagcol{display:flex; flex-direction:column; gap:6px;}
+  .vertical-tag{
+    font-family:'SF Mono',monospace;
+    font-size:10px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--text-low);
+  }
+  .category-tag{
+    font-family:'SF Mono',monospace;
+    font-size:10.5px;
+    color:var(--text-mid);
+    background:var(--navy-800);
+    border:1px solid var(--navy-700);
+    padding:2px 7px;
+    border-radius:3px;
+    display:inline-block;
+    width:fit-content;
+  }
+
+  .body-col h3{
+    margin:0 0 5px;
+    font-size:16.5px;
+    font-weight:600;
+    color:var(--text-hi);
+  }
+  .body-col p{margin:0 0 6px; font-size:13px; color:var(--text-mid); line-height:1.45;}
+  .innovation{
+    font-size:12.5px;
+    color:var(--green);
+    line-height:1.4;
+    border-left:2px solid var(--navy-700);
+    padding-left:9px;
+  }
+  .innovation b{color:var(--green); font-family:'SF Mono',monospace; font-size:10px; letter-spacing:.05em; text-transform:uppercase; display:block; margin-bottom:2px; font-weight:600;}
+
+  .engagement{
+    font-family:'SF Mono',monospace;
+    font-size:11.5px;
+    color:var(--text-low);
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .engagement .src{color:var(--text-mid); margin-bottom:2px;}
+  .engagement span b{color:var(--text-hi); font-weight:600;}
+
+  .score-col{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:6px;
+  }
+  .score-num{
+    font-family:'SF Mono',monospace;
+    font-size:24px;
+    font-weight:700;
+    color:var(--amber);
+  }
+  .meter{
+    width:88px;
+    height:5px;
+    background:var(--navy-700);
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .meter i{display:block; height:100%; background:var(--amber);}
+  .worthy-flag{
+    font-family:'SF Mono',monospace;
+    font-size:9.5px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--navy-950);
+    background:var(--amber);
+    padding:2px 6px;
+    border-radius:2px;
+    font-weight:700;
+  }
+
+  .queue{
+    margin-top:44px;
+    border-top:1px solid var(--navy-700);
+    padding-top:28px;
+  }
+  .queue h2{
+    font-size:19px;
+    margin:0 0 4px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .queue h2 .dot{color:var(--amber);}
+  .queue .sub{
+    font-family:'SF Mono',monospace;
+    font-size:11px;
+    color:var(--text-low);
+    margin:0 0 18px;
+    letter-spacing:.03em;
+  }
+  .queue-group{margin-bottom:20px;}
+  .queue-group h4{
+    font-family:'SF Mono',monospace;
+    font-size:11px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--text-mid);
+    margin:0 0 10px;
+    padding-bottom:6px;
+    border-bottom:1px solid var(--navy-800);
+  }
+  .queue-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    padding:8px 0;
+    border-bottom:1px dashed var(--navy-800);
+    font-size:13.5px;
+  }
+  .queue-item:last-child{border-bottom:none;}
+  .queue-item .qname{color:var(--text-hi);}
+  .queue-item .qscore{font-family:'SF Mono',monospace; color:var(--amber); font-size:12px;}
+
+  .empty-state{
+    font-family:'SF Mono',monospace;
+    font-size:12px;
+    color:var(--text-low);
+    padding:20px 0;
+  }
+
+  footer{
+    padding:20px 32px 40px;
+    font-family:'SF Mono',monospace;
+    font-size:10.5px;
+    color:var(--text-low);
+    text-align:center;
+  }
+
+  @media (max-width:760px){
+    .row{grid-template-columns:1fr; gap:10px;}
+    .score-col{flex-direction:row; justify-content:space-between; align-items:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <h1>Signal<span class="dot">·</span>Tracker</h1>
+    <span class="tagline">Music · Fintech · AI Marketing &amp; Growth</span>
+  </div>
+  <div class="meta">
+    RUN DATE: <span id="rundate"></span><br>
+    <span class="n" id="worthycount">…</span> flagged for article writing
+  </div>
+</header>
+
+<div class="bar">
+  <button class="tab active" data-filter="All">All</button>
+  <button class="tab" data-filter="Music">Music</button>
+  <button class="tab" data-filter="Fintech">Fintech</button>
+  <button class="tab" data-filter="AI Marketing & Growth">AI Marketing &amp; Growth</button>
+  <div class="spacer"></div>
+  <span class="sortlabel">SORT</span>
+  <select id="sortSelect">
+    <option value="score">Score (high → low)</option>
+    <option value="engagement">Engagement (high → low)</option>
+    <option value="name">Name (A → Z)</option>
+  </select>
+</div>
+
+<main>
+  <div class="grid" id="grid"><p class="empty-state">Loading today's run…</p></div>
+
+  <div class="queue">
+    <h2><span class="dot">▸</span> Article Queue</h2>
+    <p class="sub">AUTO-GENERATED FROM ITEMS SCORING 75+ — HAND OFF TO ARTICLE-WRITING SKILL</p>
+    <div id="queueContainer"></div>
+  </div>
+</main>
+
+<footer>
+  Data refreshed daily via the automated pipeline (RSS + Product Hunt → Claude scoring).<br>
+  Last successful run reflected above.
+</footer>
+
+<script>
+let DATA = [];
+const THRESHOLD = 75;
+let currentFilter = 'All';
+let currentSort = 'score';
+
+document.getElementById('rundate').textContent = new Date().toISOString().slice(0,10);
+
+function engagementTotal(e){ return e.likes + e.comments + e.shares; }
+
+function render(){
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  let items = DATA.filter(d => currentFilter === 'All' || d.vertical === currentFilter);
+
+  if(items.length === 0){
+    grid.innerHTML = '<p class="empty-state">No items for this filter in today\'s run.</p>';
+    return;
+  }
+
+  items.sort((a,b) => {
+    if(currentSort === 'score') return b.score - a.score;
+    if(currentSort === 'engagement') return engagementTotal(b.engagement) - engagementTotal(a.engagement);
+    if(currentSort === 'name') return a.name.localeCompare(b.name);
+  });
+
+  items.forEach(d => {
+    const row = document.createElement('div');
+    row.className = 'row' + (d.article_worthy ? ' worthy' : '');
+    row.innerHTML = `
+      <div class="tagcol">
+        <span class="vertical-tag">${d.vertical}</span>
+        <span class="category-tag">${d.category}</span>
+      </div>
+      <div class="body-col">
+        <h3>${d.name}</h3>
+        <p>${d.description}</p>
+        <div class="innovation"><b>Innovation</b>${d.innovation}</div>
+      </div>
+      <div class="engagement">
+        <span class="src">${d.source}</span>
+        <span>♥ <b>${d.engagement.likes}</b> &nbsp; 💬 <b>${d.engagement.comments}</b> &nbsp; ↻ <b>${d.engagement.shares}</b></span>
+      </div>
+      <div class="score-col">
+        ${d.article_worthy ? '<span class="worthy-flag">Write article</span>' : ''}
+        <span class="score-num">${d.score}</span>
+        <div class="meter"><i style="width:${d.score}%"></i></div>
+      </div>
+    `;
+    grid.appendChild(row);
+  });
+}
+
+function renderQueue(){
+  const container = document.getElementById('queueContainer');
+  container.innerHTML = '';
+  const worthy = DATA.filter(d => d.article_worthy).sort((a,b) => b.score - a.score);
+  const verticals = ['Music','Fintech','AI Marketing & Growth'];
+
+  verticals.forEach(v => {
+    const groupItems = worthy.filter(d => d.vertical === v);
+    if(groupItems.length === 0) return;
+    const group = document.createElement('div');
+    group.className = 'queue-group';
+    group.innerHTML = `<h4>${v}</h4>` + groupItems.map(d => `
+      <div class="queue-item">
+        <span class="qname">${d.name} — <span style="color:var(--text-low)">${d.innovation.split('.')[0]}.</span></span>
+        <span class="qscore">${d.score}</span>
+      </div>
+    `).join('');
+    container.appendChild(group);
+  });
+
+  if(worthy.length === 0){
+    container.innerHTML = '<p class="empty-state">No items cleared the article-worthy threshold in this run.</p>';
+  }
+}
+
+fetch('data.json')
+  .then(r => r.json())
+  .then(d => {
+    DATA = d;
+    document.getElementById('worthycount').textContent = DATA.filter(x => x.article_worthy).length;
+    render();
+    renderQueue();
+  })
+  .catch(err => {
+    document.getElementById('grid').innerHTML =
+      '<p class="empty-state">Could not load data.json — check that the daily workflow has run at least once and the file exists at the repo root.</p>';
+    console.error(err);
+  });
+
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentFilter = tab.dataset.filter;
+    render();
+  });
+});
+
+document.getElementById('sortSelect').addEventListener('change', e => {
+  currentSort = e.target.value;
+  render();
+});
+</script>
+
+</body>
+</html>
