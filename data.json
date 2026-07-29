@@ -1,0 +1,354 @@
+[
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "GEMA PLAI Licensed Dataset",
+    "description": "GEMA, the German music collecting society, is offering a licensed dataset called PLAI specifically designed for training AI music generation models.",
+    "innovation": "Addresses a real and urgent gap in the AI music space by providing a legally cleared, rights-holder-sanctioned training dataset \u2014 genuinely novel in that it creates a compliance pathway that doesn't currently exist at scale, though the actual dataset contents and licensing terms remain to be scrutinized.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/27/gemas-plai-is-a-licensed-dataset-for-training-ai-music-models/",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 72,
+      "engagement": 40,
+      "novelty": 65,
+      "applicability": 45
+    },
+    "score": 58.3,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "AI Brand Reputation Persistence Research",
+    "description": "Research using 2.7 million data points from the 2026 Winter Olympics shows how AI systems form and maintain narratives about brands and public figures.",
+    "innovation": "The core insight\u2014that AI models encode and perpetuate brand narratives\u2014is not new, but applying it at scale with a large real-world dataset tied to a live event adds some empirical weight; it's more validation than discovery.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/brand-reputation-ai-b2b-marketers-summit",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 62,
+      "engagement": 40,
+      "novelty": 30,
+      "applicability": 40
+    },
+    "score": 46.8,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "AI Agents for Marketing Data Analysis",
+    "description": "SmarterX demonstrates how developer-oriented AI coding tools like OpenAI Codex and Anthropic Claude Code can be repurposed by marketers to analyze and interpret messy datasets.",
+    "innovation": "Not especially novel \u2014 using LLM-based coding agents for data analysis is well-documented; the marginal contribution here is a marketer-facing framing of existing developer tools, which is useful but not a genuine breakthrough.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-agents-for-data-analysis",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 62,
+      "engagement": 40,
+      "novelty": 22,
+      "applicability": 55
+    },
+    "score": 46.7,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "Spotify x Snapchat Social Music Discovery",
+    "description": "Spotify is expanding in-app music sharing to social platforms including Snapchat, while Snapchat is converting its Snap Map into a music discovery feature powered by Spotify.",
+    "innovation": "The Snap Map angle is mildly novel \u2014 using location-based social context for music discovery is a fresh surface \u2014 but Spotify adding social sharing buttons is thoroughly incremental and not meaningfully new.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/28/social-meets-music-again-with-spotify-and-snapchat-moves/",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 62,
+      "engagement": 40,
+      "novelty": 28,
+      "applicability": 40
+    },
+    "score": 46.4,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "AI-Powered Competitive Analysis",
+    "description": "Using AI tools to compress competitive analysis research from weeks of work into under a minute at near-zero cost.",
+    "innovation": "Not genuinely novel \u2014 AI-assisted competitive research has been widely covered; this appears to be a how-to explainer repackaging existing LLM prompt workflows rather than introducing a new product or methodology.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-for-competitive-analysis",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 55,
+      "engagement": 40,
+      "novelty": 18,
+      "applicability": 62
+    },
+    "score": 43.8,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "Too Lost x Roblox Music Licensing",
+    "description": "Music distributor Too Lost has struck a deal to make its catalogue available for use by Roblox game and experience creators.",
+    "innovation": "Extending indie music distribution into gaming/metaverse platforms is a growing trend but not genuinely novel \u2014 similar deals exist with TikTok, YouTube, etc. \u2014 though Roblox's creator-economy scale makes this a notable distribution channel expansion.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/28/too-lost-is-making-its-catalogue-available-for-roblox-games/",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 52,
+      "engagement": 40,
+      "novelty": 30,
+      "applicability": 35
+    },
+    "score": 42.3,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Content AI",
+    "name": "Google Flow Music Spaces",
+    "description": "Google's Flow Music Spaces is an AI tool for music creation that is expanding its feature set and distribution through partnerships with music companies like Believe.",
+    "innovation": "The expansion of AI music creation tools to independent artists via label/distributor partnerships is modestly notable, but the headline offers no specifics on what features were added, making it hard to assess genuine novelty beyond incremental product updates.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/28/google-adds-more-features-to-its-flow-music-spaces-ai-tool/",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 52,
+      "engagement": 40,
+      "novelty": 28,
+      "applicability": 35
+    },
+    "score": 41.9,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Automation & Workflow",
+    "name": "AI Research Workflows for Marketers",
+    "description": "A MAICON 2026 session framing everyday marketing intelligence tasks (buyer profiling, competitive analysis, audience insights) as structured AI-assisted research workflows.",
+    "innovation": "Not genuinely novel \u2014 the core idea of applying AI to marketing research is well-established; this appears to be a conference talk repackaging existing AI workflow concepts under a new framing rather than introducing a distinct product or methodology.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/maicon-2026-ai-research-workflows-for-marketers",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 52,
+      "engagement": 40,
+      "novelty": 18,
+      "applicability": 45
+    },
+    "score": 40.9,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "2026 State of AI for B2B Marketing Report",
+    "description": "A survey of 2,100+ business professionals measuring AI adoption maturity and gaps between individual and organizational AI usage in B2B marketing contexts.",
+    "innovation": "Not particularly novel \u2014 it's a standard industry survey report with familiar findings about AI adoption lag; the '41% siloed AI momentum' stat is interesting but the underlying insight (individuals outpace orgs) has been widely reported for two years.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/b2b-marketers-summit-ai-orchestrator",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 55,
+      "engagement": 40,
+      "novelty": 18,
+      "applicability": 30
+    },
+    "score": 40.6,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Automation & Workflow",
+    "name": "AI Model Dependency Risk Management",
+    "description": "A cautionary piece advising marketers on the risks of building workflows around AI models that may be deprecated, pivoted, or replaced rapidly.",
+    "innovation": "Not genuinely novel \u2014 vendor lock-in and platform dependency risks are well-understood problems; this is a repackaging of existing IT risk management advice applied to AI tools.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-models-rapidly-changing",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 42,
+      "engagement": 40,
+      "novelty": 12,
+      "applicability": 38
+    },
+    "score": 35.0,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "2026 State of AI for Business Report",
+    "description": "A survey of 2,100+ professionals (84% B2B, ~33% marketers) reporting on AI adoption trends in business and marketing.",
+    "innovation": "Not genuinely novel \u2014 this is a standard annual industry survey report repackaged as forward-looking insight; the value is in the dataset size and B2B marketer sample, not any new methodology or idea.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/future-of-work-b2b-marketers-summit",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 42,
+      "engagement": 40,
+      "novelty": 15,
+      "applicability": 30
+    },
+    "score": 34.8,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "AI Skills Gap in Marketing Teams",
+    "description": "An opinion piece raising the concern that marketing teams may use AI tools individually but lack collective upskilling and knowledge-sharing practices.",
+    "innovation": "Not genuinely novel \u2014 the observation that AI adoption varies within teams is widely discussed; this is a reframing of a known organizational challenge without introducing new tools, frameworks, or data.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-gap-marketing",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 42,
+      "engagement": 40,
+      "novelty": 12,
+      "applicability": 30
+    },
+    "score": 34.2,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Content AI",
+    "name": "AI as Thinking Partner",
+    "description": "A content marketing practitioner argues marketers should use AI as a collaborative thinking partner rather than a transactional content-generation tool.",
+    "innovation": "Not genuinely novel \u2014 the 'AI as collaborator not replacement' framing is a well-worn talking point in marketing circles with little new technical or methodological substance offered here.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/ai-b2b-marketers-summit-thought-partner",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 42,
+      "engagement": 40,
+      "novelty": 12,
+      "applicability": 30
+    },
+    "score": 34.2,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "Charli XCX iTunes-Exclusive B-Sides",
+    "description": "Charli XCX released a B-Sides edition of her album exclusively on iTunes, deliberately withholding the tracks from streaming platforms.",
+    "innovation": "Not genuinely novel \u2014 artist-exclusive download releases and streaming exclusivity windows have existed for years; this is a minor distribution strategy choice, not a meaningful innovation.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/27/charli-xcx-releases-b-sides-edition-of-new-album-on-itunes/",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 42,
+      "engagement": 40,
+      "novelty": 15,
+      "applicability": 20
+    },
+    "score": 33.8,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "SmarterX B2B AI Sentiment Research 2026",
+    "description": "SmarterX published research capturing B2B professionals' attitudes and emotional responses toward AI adoption in their workflows.",
+    "innovation": "Survey-based sentiment research on AI adoption is a crowded, low-differentiation space \u2014 this appears to be standard market research repackaged as thought leadership with no clearly novel methodology or finding highlighted.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/ai-for-business-report-b2b-marketers-summit",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 38,
+      "engagement": 40,
+      "novelty": 15,
+      "applicability": 25
+    },
+    "score": 32.7,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Analytics & Insights",
+    "name": "Spotify Mexico Emo/Pop-Punk Trend Report",
+    "description": "Spotify has published streaming data showing growth of emo and pop-punk genres in Mexico.",
+    "innovation": "Not genuinely novel \u2014 this is a standard platform trend report using existing streaming analytics; it surfaces an interesting regional genre insight but offers no new methodology or product innovation.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/27/mexicos-latest-music-streaming-trend-is-emo/",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 35,
+      "engagement": 40,
+      "novelty": 10,
+      "applicability": 15
+    },
+    "score": 29.5,
+    "article_worthy": false
+  }
+]
