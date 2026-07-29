@@ -1,6 +1,3 @@
-# Articles_Builder
-Agent for creating Fintech / Music and Marketing articles based on new innovations and ideas in the market.
-
 # Signal Tracker
 
 A daily pipeline that scans Music, Fintech, and AI Marketing & Growth for new
@@ -47,7 +44,9 @@ Every Monday and Wednesday, `write_articles.py`:
 1. Reads `selected_for_writing.json` — if you've pasted item name(s) from the
    dashboard's Article Queue in there, those are used. Otherwise it falls back
    to the single highest-scoring item that hasn't already appeared in
-   `written_log.json`.
+   `written_log.json` — this fallback is **not** gated on the 75+ article-worthy
+   threshold, so a run never comes up empty just because no item cleared that
+   bar; the threshold remains purely a quality signal on the dashboard.
 2. Generates the article using the tone/voice rules from the `article-writer`
    skill (technical-marketer lens, musician's mindset, no hype, LinkedIn
    formatting, SEO in the opening lines, GEO-friendly clear claims).
