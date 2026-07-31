@@ -1,0 +1,52 @@
+# Save this file as .github/workflows/linkedin_post_run.yml in your repo,
+# alongside daily_run.yml and writer_run.yml.
+#
+# Setup:
+# 1. Add two more repo secrets (Settings -> Secrets and variables -> Actions):
+#      GMAIL_ADDRESS       - the Gmail account to send from and to
+#      GMAIL_APP_PASSWORD  - a Gmail App Password (see steps below), NOT your
+#                             regular Gmail password
+#
+# How to get a Gmail App Password:
+#   a. Your Google account needs 2-Step Verification turned on first
+#      (myaccount.google.com/security)
+#   b. Go to myaccount.google.com/apppasswords
+#   c. Create a new app password (name it anything, e.g. "articles-builder")
+#   d. Copy the 16-character password shown -- that's what goes in
+#      GMAIL_APP_PASSWORD (not your normal login password)
+
+name: LinkedIn Post Writer (Tue/Thu)
+
+on:
+  schedule:
+    - cron: "0 7 * * 2"   # Tuesday 07:00 UTC
+    - cron: "0 7 * * 4"   # Thursday 07:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  write-linkedin-post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Generate and email post
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python write_linkedin_posts.py
+
+      - name: Commit updated log
+        run: |
+          git config user.name "signal-tracker-bot"
+          git config user.email "actions@github.com"
+          git add linkedin_post_log.json
+          git diff --staged --quiet || git commit -m "LinkedIn post run: $(date -u +%Y-%m-%d)"
+          git push
