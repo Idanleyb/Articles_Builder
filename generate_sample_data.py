@@ -8,6 +8,7 @@ weighting logic, and write to data.json in the same shape.
 """
 import json
 import random
+from datetime import datetime, timezone, timedelta
 
 random.seed(7)
 
@@ -185,8 +186,12 @@ def weighted_score(scores):
 
 def build():
     items = []
-    for raw in RAW_ITEMS:
+    now = datetime.now(timezone.utc)
+    for i, raw in enumerate(RAW_ITEMS):
         total = weighted_score(raw["scores"])
+        # Stagger sample timestamps across the last few days so date sorting
+        # has something meaningful to demonstrate.
+        published_at = (now - timedelta(days=i % 4, hours=i)).isoformat()
         item = {
             "vertical": raw["vertical"],
             "category": raw["category"],
@@ -194,6 +199,7 @@ def build():
             "description": raw["description"],
             "innovation": raw["innovation"],
             "source": raw["source"],
+            "published_at": published_at,
             "engagement": {
                 "likes": raw["likes"],
                 "comments": raw["comments"],

@@ -155,6 +155,7 @@
     gap:4px;
   }
   .engagement .src{color:var(--text-mid); margin-bottom:2px;}
+  .timestamp{color:var(--text-low); font-size:10px; margin-top:2px;}
   .engagement span b{color:var(--text-hi); font-weight:600;}
 
   .score-col{
@@ -232,13 +233,6 @@
   .queue-item .qname{color:var(--text-hi);}
   .queue-item .qscore{font-family:'SF Mono',monospace; color:var(--amber); font-size:12px;}
 
-  .empty-state{
-    font-family:'SF Mono',monospace;
-    font-size:12px;
-    color:var(--text-low);
-    padding:20px 0;
-  }
-
   footer{
     padding:20px 32px 40px;
     font-family:'SF Mono',monospace;
@@ -262,7 +256,7 @@
   </div>
   <div class="meta">
     RUN DATE: <span id="rundate"></span><br>
-    <span class="n" id="worthycount">…</span> flagged for article writing
+    <span class="n" id="worthycount"></span> flagged for article writing
   </div>
 </header>
 
@@ -275,13 +269,14 @@
   <span class="sortlabel">SORT</span>
   <select id="sortSelect">
     <option value="score">Score (high → low)</option>
+    <option value="date">Date (newest → oldest)</option>
     <option value="engagement">Engagement (high → low)</option>
     <option value="name">Name (A → Z)</option>
   </select>
 </div>
 
 <main>
-  <div class="grid" id="grid"><p class="empty-state">Loading today's run…</p></div>
+  <div class="grid" id="grid"></div>
 
   <div class="queue">
     <h2><span class="dot">▸</span> Article Queue</h2>
@@ -291,32 +286,353 @@
 </main>
 
 <footer>
-  Data refreshed daily via the automated pipeline (RSS + Product Hunt → Claude scoring).<br>
-  Last successful run reflected above.
+  SAMPLE DATA — this is placeholder content demonstrating layout &amp; scoring logic.<br>
+  Once fetch_and_score.py is wired to live RSS + Product Hunt sources, this file reads data.json instead of embedded data.
 </footer>
 
 <script>
-let DATA = [];
+const DATA = [
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Content AI",
+    "name": "GEO-Native Content Briefs",
+    "description": "Generates content briefs optimized for how generative engines (not just search engines) cite and summarize brands.",
+    "innovation": "One of the first tools built for 'generative engine optimization' as a discipline distinct from SEO.",
+    "source": "Marketing AI Institute",
+    "engagement": {
+      "likes": 520,
+      "comments": 88,
+      "shares": 133
+    },
+    "score_breakdown": {
+      "relevance": 98,
+      "engagement": 85,
+      "novelty": 90,
+      "applicability": 75
+    },
+    "score": 90.2,
+    "article_worthy": true
+  },
+  {
+    "vertical": "Music",
+    "category": "Automation & Workflow",
+    "name": "Auto-Generated Practice Curricula",
+    "description": "Builds a week-by-week curriculum for a learner based on skill assessments, adjusting difficulty automatically as they progress.",
+    "innovation": "Replaces static method books with a curriculum that re-plans itself after every session.",
+    "source": "Music Ally",
+    "engagement": {
+      "likes": 445,
+      "comments": 67,
+      "shares": 80
+    },
+    "score_breakdown": {
+      "relevance": 95,
+      "engagement": 80,
+      "novelty": 78,
+      "applicability": 95
+    },
+    "score": 87.1,
+    "article_worthy": true
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Automation & Workflow",
+    "name": "Agent-Run Growth Experiments",
+    "description": "An autonomous agent that proposes, launches, and kills growth experiments on landing pages without a human approving each step.",
+    "innovation": "Moves growth teams from 'agent suggests, human decides' to 'agent decides, human audits' \u2014 a genuine workflow shift.",
+    "source": "Ben's Bites",
+    "engagement": {
+      "likes": 601,
+      "comments": 112,
+      "shares": 140
+    },
+    "score_breakdown": {
+      "relevance": 88,
+      "engagement": 92,
+      "novelty": 88,
+      "applicability": 50
+    },
+    "score": 85.4,
+    "article_worthy": true
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Content AI",
+    "name": "Adaptive Ad-Copy Generator",
+    "description": "A tool that rewrites ad copy per-audience-segment in real time, using response data instead of static A/B tests.",
+    "innovation": "Collapses A/B testing cycles from weeks to hours by treating copy as a continuously-optimized variable rather than a fixed asset.",
+    "source": "Marketing AI Institute",
+    "engagement": {
+      "likes": 412,
+      "comments": 58,
+      "shares": 91
+    },
+    "score_breakdown": {
+      "relevance": 95,
+      "engagement": 78,
+      "novelty": 70,
+      "applicability": 60
+    },
+    "score": 81.4,
+    "article_worthy": true
+  },
+  {
+    "vertical": "Music",
+    "category": "Content AI",
+    "name": "Stem-Aware Practice Coach",
+    "description": "Isolates instrument stems from any reference track in real time and adapts practice exercises to what the player is struggling with.",
+    "innovation": "Turns any commercial recording into a personalized lesson plan on the fly, rather than relying on pre-made tutorials.",
+    "source": "Music Ally",
+    "engagement": {
+      "likes": 265,
+      "comments": 33,
+      "shares": 40
+    },
+    "score_breakdown": {
+      "relevance": 92,
+      "engagement": 62,
+      "novelty": 75,
+      "applicability": 90
+    },
+    "score": 79.4,
+    "article_worthy": true
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "Attribution-Free Funnel Mapper",
+    "description": "Uses probabilistic modeling instead of pixel-based tracking to estimate channel contribution as cookies disappear.",
+    "innovation": "Sidesteps the privacy/tracking collapse entirely rather than patching around it.",
+    "source": "Exploding Topics",
+    "engagement": {
+      "likes": 289,
+      "comments": 34,
+      "shares": 47
+    },
+    "score_breakdown": {
+      "relevance": 90,
+      "engagement": 60,
+      "novelty": 82,
+      "applicability": 55
+    },
+    "score": 75.9,
+    "article_worthy": true
+  },
+  {
+    "vertical": "Fintech",
+    "category": "Analytics & Insights",
+    "name": "Merchant Risk Signal Aggregator",
+    "description": "Combines transaction velocity, review sentiment, and public filings into a single fraud/risk score updated daily.",
+    "innovation": "Fuses previously siloed signal types (behavioral + reputational + regulatory) into one continuously-updating score.",
+    "source": "Product Hunt",
+    "engagement": {
+      "likes": 380,
+      "comments": 52,
+      "shares": 44
+    },
+    "score_breakdown": {
+      "relevance": 88,
+      "engagement": 70,
+      "novelty": 68,
+      "applicability": 55
+    },
+    "score": 75.3,
+    "article_worthy": true
+  },
+  {
+    "vertical": "Fintech",
+    "category": "Analytics & Insights",
+    "name": "Cash-Flow Forecast Copilot",
+    "description": "Reads a small business's transaction history and forecasts cash-flow gaps 30-60 days out with plain-language explanations.",
+    "innovation": "Explains *why* a gap is predicted, not just that one exists \u2014 closes the trust gap that kills adoption of forecasting tools.",
+    "source": "Product Hunt",
+    "engagement": {
+      "likes": 340,
+      "comments": 41,
+      "shares": 30
+    },
+    "score_breakdown": {
+      "relevance": 85,
+      "engagement": 65,
+      "novelty": 65,
+      "applicability": 80
+    },
+    "score": 74.5,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Fintech",
+    "category": "Automation & Workflow",
+    "name": "Auto-Categorizing Ledger Agent",
+    "description": "An agent that categorizes bank/card transactions and flags anomalies, learning per-user categorization habits instead of using fixed rules.",
+    "innovation": "Personalized categorization logic per household/business rather than a shared static rule set.",
+    "source": "Product Hunt",
+    "engagement": {
+      "likes": 298,
+      "comments": 37,
+      "shares": 22
+    },
+    "score_breakdown": {
+      "relevance": 82,
+      "engagement": 55,
+      "novelty": 58,
+      "applicability": 92
+    },
+    "score": 70.1,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Content AI",
+    "name": "Setlist Personalization Engine",
+    "description": "Suggests live setlists per venue/city based on local streaming data, so touring acts can tailor shows to regional fan behavior.",
+    "innovation": "Applies growth-marketing-style segmentation logic to something as traditionally 'gut-feel' as a live setlist.",
+    "source": "Music Ally",
+    "engagement": {
+      "likes": 227,
+      "comments": 25,
+      "shares": 21
+    },
+    "score_breakdown": {
+      "relevance": 84,
+      "engagement": 48,
+      "novelty": 74,
+      "applicability": 55
+    },
+    "score": 68.3,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "AI Co-Writer for Song Structure",
+    "description": "Suggests structural alternatives (bridge placement, section length) for a work-in-progress song without generating the actual lyrics or melody.",
+    "innovation": "Keeps the human as sole author of creative content while assisting with structural craft \u2014 a narrower, less controversial use of generative AI in music.",
+    "source": "Music Business Worldwide",
+    "engagement": {
+      "likes": 310,
+      "comments": 48,
+      "shares": 35
+    },
+    "score_breakdown": {
+      "relevance": 80,
+      "engagement": 58,
+      "novelty": 70,
+      "applicability": 45
+    },
+    "score": 67.9,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Analytics & Insights",
+    "name": "Fan-Intent Forecasting",
+    "description": "Predicts which fans are close to converting from streaming to ticket/merch purchases, based on listening-pattern shifts.",
+    "innovation": "Uses listening behavior as a leading indicator of purchase intent, not just a lagging engagement metric.",
+    "source": "Music Business Worldwide",
+    "engagement": {
+      "likes": 198,
+      "comments": 20,
+      "shares": 15
+    },
+    "score_breakdown": {
+      "relevance": 78,
+      "engagement": 42,
+      "novelty": 66,
+      "applicability": 50
+    },
+    "score": 62.0,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Fintech",
+    "category": "Other / Emerging",
+    "name": "Conversational Underwriting Assistant",
+    "description": "Lets loan officers query underwriting models in natural language instead of navigating rule engines.",
+    "innovation": "Makes black-box credit models auditable in plain conversation \u2014 a real transparency step, not just a UI skin.",
+    "source": "Fintech Brainfood",
+    "engagement": {
+      "likes": 210,
+      "comments": 29,
+      "shares": 18
+    },
+    "score_breakdown": {
+      "relevance": 75,
+      "engagement": 45,
+      "novelty": 72,
+      "applicability": 40
+    },
+    "score": 61.9,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Other / Emerging",
+    "name": "Synthetic Focus Groups",
+    "description": "Simulates customer panels using persona-tuned LLMs to pre-test messaging before a real campaign spend.",
+    "innovation": "Cuts research cost, but the real innovation is treating simulated feedback as a rough filter, not a replacement for real users.",
+    "source": "Superhuman AI",
+    "engagement": {
+      "likes": 175,
+      "comments": 22,
+      "shares": 19
+    },
+    "score_breakdown": {
+      "relevance": 80,
+      "engagement": 40,
+      "novelty": 55,
+      "applicability": 45
+    },
+    "score": 59.5,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Fintech",
+    "category": "Content AI",
+    "name": "Plain-Language Statement Generator",
+    "description": "Rewrites dense financial statements and disclosures into plain language tailored to a reader's financial literacy level.",
+    "innovation": "Targets financial literacy directly as a product feature rather than a compliance afterthought.",
+    "source": "Fintech Brainfood",
+    "engagement": {
+      "likes": 156,
+      "comments": 15,
+      "shares": 12
+    },
+    "score_breakdown": {
+      "relevance": 70,
+      "engagement": 30,
+      "novelty": 60,
+      "applicability": 65
+    },
+    "score": 55.5,
+    "article_worthy": false
+  }
+];
+
 const THRESHOLD = 75;
+document.getElementById('rundate').textContent = new Date().toISOString().slice(0,10);
+document.getElementById('worthycount').textContent = DATA.filter(d => d.article_worthy).length;
+
 let currentFilter = 'All';
 let currentSort = 'score';
 
-document.getElementById('rundate').textContent = new Date().toISOString().slice(0,10);
-
 function engagementTotal(e){ return e.likes + e.comments + e.shares; }
+
+function formatTimestamp(iso){
+  const d = new Date(iso);
+  const datePart = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  const timePart = d.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' });
+  return `Published ${datePart}, ${timePart}`;
+}
 
 function render(){
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
   let items = DATA.filter(d => currentFilter === 'All' || d.vertical === currentFilter);
 
-  if(items.length === 0){
-    grid.innerHTML = '<p class="empty-state">No items for this filter in today\'s run.</p>';
-    return;
-  }
-
   items.sort((a,b) => {
     if(currentSort === 'score') return b.score - a.score;
+    if(currentSort === 'date') return new Date(b.published_at) - new Date(a.published_at);
     if(currentSort === 'engagement') return engagementTotal(b.engagement) - engagementTotal(a.engagement);
     if(currentSort === 'name') return a.name.localeCompare(b.name);
   });
@@ -337,6 +653,7 @@ function render(){
       <div class="engagement">
         <span class="src">${d.source}</span>
         <span>♥ <b>${d.engagement.likes}</b> &nbsp; 💬 <b>${d.engagement.comments}</b> &nbsp; ↻ <b>${d.engagement.shares}</b></span>
+        <span class="timestamp">${d.published_at ? formatTimestamp(d.published_at) : ''}</span>
       </div>
       <div class="score-col">
         ${d.article_worthy ? '<span class="worthy-flag">Write article</span>' : ''}
@@ -369,23 +686,9 @@ function renderQueue(){
   });
 
   if(worthy.length === 0){
-    container.innerHTML = '<p class="empty-state">No items cleared the article-worthy threshold in this run.</p>';
+    container.innerHTML = '<p style="color:var(--text-low); font-family:monospace; font-size:12px;">No items cleared the article-worthy threshold in this run.</p>';
   }
 }
-
-fetch('data.json')
-  .then(r => r.json())
-  .then(d => {
-    DATA = d;
-    document.getElementById('worthycount').textContent = DATA.filter(x => x.article_worthy).length;
-    render();
-    renderQueue();
-  })
-  .catch(err => {
-    document.getElementById('grid').innerHTML =
-      '<p class="empty-state">Could not load data.json — check that the daily workflow has run at least once and the file exists at the repo root.</p>';
-    console.error(err);
-  });
 
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
@@ -400,6 +703,9 @@ document.getElementById('sortSelect').addEventListener('change', e => {
   currentSort = e.target.value;
   render();
 });
+
+render();
+renderQueue();
 </script>
 
 </body>

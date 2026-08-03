@@ -20,6 +20,7 @@ RUN LOCALLY:
 import json
 import os
 import re
+import calendar
 from datetime import datetime, timezone
 
 import feedparser
@@ -58,11 +59,17 @@ def fetch_rss_items():
         try:
             feed = feedparser.parse(url)
             for entry in feed.entries[:15]:
+                published_at = None
+                if entry.get("published_parsed"):
+                    published_at = datetime.fromtimestamp(
+                        calendar.timegm(entry.published_parsed), tz=timezone.utc
+                    ).isoformat()
                 items.append({
                     "raw_title": entry.get("title", ""),
                     "raw_text": re.sub("<[^<]+?>", "", entry.get("summary", ""))[:1200],
                     "url": entry.get("link", ""),
                     "source": feed.feed.get("title", url),
+                    "published_at": published_at,  # None if the feed entry doesn't carry one
                     "likes": None, "comments": None, "shares": None,  # RSS has no engagement data
                 })
         except Exception as e:
@@ -79,7 +86,7 @@ def fetch_product_hunt_items():
     query = """
     query($topic: String!) {
       posts(topic: $topic, order: VOTES, first: 10) {
-        edges { node { name tagline description url votesCount commentsCount } }
+        edges { node { name tagline description url votesCount commentsCount featuredAt } }
       }
     }
     """
@@ -100,6 +107,7 @@ def fetch_product_hunt_items():
                     "raw_text": f"{node['tagline']}. {node.get('description','')}"[:1200],
                     "url": node["url"],
                     "source": "Product Hunt",
+                    "published_at": node.get("featuredAt"),  # Product Hunt's launch date, already ISO 8601
                     "likes": node.get("votesCount"),
                     "comments": node.get("commentsCount"),
                     "shares": None,
@@ -172,6 +180,9 @@ def main():
     raw_items = fetch_rss_items() + fetch_product_hunt_items()
     print(f"Fetched {len(raw_items)} raw candidates.")
 
+    run_timestamp = datetime.now(timezone.utc).isoformat()
+    missing_published_count = 0
+
     results = []
     for raw in raw_items[:MAX_ITEMS_TO_SCORE]:
         parsed = classify_and_score(raw)
@@ -185,6 +196,15 @@ def main():
             "applicability": parsed["applicability_score"],
         }
         total = weighted_total(scores)
+
+        # The real creation/publish date from the source. Falls back to this
+        # run's timestamp only if the source genuinely didn't provide one
+        # (rare — most RSS entries and all Product Hunt posts carry a real date).
+        published_at = raw.get("published_at")
+        if not published_at:
+            missing_published_count += 1
+            published_at = run_timestamp
+
         results.append({
             "vertical": parsed["vertical"],
             "category": parsed["category"],
@@ -193,6 +213,7 @@ def main():
             "innovation": parsed["innovation"],
             "source": raw["source"],
             "url": raw["url"],
+            "published_at": published_at,
             "engagement": {
                 "likes": raw["likes"] or 0,
                 "comments": raw["comments"] or 0,
@@ -210,6 +231,8 @@ def main():
 
     print(f"Scored {len(results)} relevant items.")
     print(f"Article-worthy: {sum(1 for r in results if r['article_worthy'])}")
+    if missing_published_count:
+        print(f"[info] {missing_published_count} item(s) had no publish date from their source — used run time as fallback.")
     print(f"Run completed at {datetime.now(timezone.utc).isoformat()}")
 
 
