@@ -1,26 +1,9 @@
-# Save this file as .github/workflows/linkedin_post_run.yml in your repo,
-# alongside daily_run.yml and writer_run.yml.
-#
-# Setup:
-# 1. Add two more repo secrets (Settings -> Secrets and variables -> Actions):
-#      GMAIL_ADDRESS       - the Gmail account to send from and to
-#      GMAIL_APP_PASSWORD  - a Gmail App Password (see steps below), NOT your
-#                             regular Gmail password
-#
-# How to get a Gmail App Password:
-#   a. Your Google account needs 2-Step Verification turned on first
-#      (myaccount.google.com/security)
-#   b. Go to myaccount.google.com/apppasswords
-#   c. Create a new app password (name it anything, e.g. "articles-builder")
-#   d. Copy the 16-character password shown -- that's what goes in
-#      GMAIL_APP_PASSWORD (not your normal login password)
-
 name: LinkedIn Post Writer (Tue/Thu)
 
 on:
   schedule:
-    - cron: "0 7 * * 2"   # Tuesday 07:00 UTC
-    - cron: "0 7 * * 4"   # Thursday 07:00 UTC
+    - cron: "17 7 * * 2"   # Tuesday 07:17 UTC — offset from :00 to avoid GitHub's peak-congestion minute
+    - cron: "17 7 * * 4"   # Thursday 07:17 UTC
   workflow_dispatch: {}
 
 jobs:

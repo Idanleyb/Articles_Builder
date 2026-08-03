@@ -1,24 +1,9 @@
-# Save this file as .github/workflows/writer_run.yml in your repo,
-# alongside the existing daily_run.yml (tracker) workflow.
-#
-# Setup:
-# 1. Add two more repo secrets (Settings -> Secrets and variables -> Actions):
-#      GOOGLE_SERVICE_ACCOUNT_JSON  - paste the *entire contents* of the
-#                                     service account's downloaded JSON key file
-#      GOOGLE_DOC_ID                - the ID from your Google Doc's URL:
-#                                     https://docs.google.com/document/d/THIS_PART/edit
-# 2. Share that Google Doc with the service account's email address
-#    (looks like something@your-project.iam.gserviceaccount.com), Editor access.
-# 3. Before a run, optionally edit selected_for_writing.json to hand-pick
-#    which item(s) to write about. Leave it empty to let the script
-#    auto-pick the top-scoring unwritten item.
-
 name: Monday/Wednesday Article Writer
 
 on:
   schedule:
-    - cron: "0 7 * * 1"   # Monday 07:00 UTC — runs after the daily tracker (06:00 UTC)
-    - cron: "0 7 * * 3"   # Wednesday 07:00 UTC
+    - cron: "17 7 * * 1"   # Monday 07:17 UTC — offset from :00 to avoid GitHub's peak-congestion minute
+    - cron: "17 7 * * 3"   # Wednesday 07:17 UTC
   workflow_dispatch: {}
 
 jobs:
