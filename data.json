@@ -2,55 +2,35 @@
   {
     "vertical": "Music",
     "category": "Other / Emerging",
-    "name": "GEMA vs. Suno Copyright Ruling",
-    "description": "German music collecting society GEMA has won a copyright infringement lawsuit against AI music generation platform Suno.",
-    "innovation": "Not a product innovation \u2014 this is a legal precedent that meaningfully constrains how AI music generators can train on copyrighted material, with direct downstream implications for the entire AI music generation industry.",
+    "name": "UMG 72-Hour Premium Window (India)",
+    "description": "Universal Music Group is introducing a 72-hour exclusive premium-tier window for major new releases in India to incentivize paid music subscriptions.",
+    "innovation": "Applying a time-gated premium access model (similar to film release windows) to music streaming is a meaningful strategic experiment, though the windowing concept itself is not new \u2014 its application to music in a price-sensitive emerging market like India is the genuinely interesting angle.",
     "source": "Music Ally",
-    "url": "https://musically.com/2026/07/31/german-collecting-society-gema-wins-its-copyright-infringement-lawsuit-against-suno/",
+    "url": "https://musically.com/2026/07/31/universal-music-group-announces-72-hour-premium-window-for-major-releases-in-india/",
+    "published_at": "2026-07-31T09:35:22+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
       "shares": 0
     },
     "score_breakdown": {
-      "relevance": 72,
+      "relevance": 62,
       "engagement": 40,
-      "novelty": 55,
-      "applicability": 45
+      "novelty": 45,
+      "applicability": 30
     },
-    "score": 56.3,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Content AI",
-    "name": "SoundGate AI Guitar Tutor",
-    "description": "SoundGate is an Armenian startup that has launched an AI-powered guitar tutoring app aimed at music learners.",
-    "innovation": "AI-driven guitar tutoring is a crowded space (Yousician, Fender Play, etc.) and the snippet reveals nothing technically novel \u2014 without evidence of unique feedback mechanisms, pitch detection advances, or adaptive curriculum, this appears to be another entrant in a saturated category rather than a genuine breakthrough.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/07/30/startup-soundgate-launches-an-ai-tutor-for-learning-guitar/",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 72,
-      "engagement": 40,
-      "novelty": 28,
-      "applicability": 82
-    },
-    "score": 54.6,
+    "score": 48.8,
     "article_worthy": false
   },
   {
     "vertical": "Music",
     "category": "Other / Emerging",
     "name": "Spotify User Notes",
-    "description": "Spotify is introducing a 'User Notes' feature that lets listeners add their own personal context or annotations to songs and albums within the app.",
-    "innovation": "User-generated contextual annotation on top of streamed content is a modest but meaningful shift from purely editorial or AI-driven metadata, giving listeners a personal memory/journaling layer \u2014 not groundbreaking but a genuine UX differentiator in a crowded streaming market.",
+    "description": "Spotify is introducing a 'User Notes' feature that allows listeners to add their own personal context or annotations to tracks or albums within the app.",
+    "innovation": "User-generated contextual annotation on a streaming platform is a modest but genuine shift from platform/artist-controlled metadata toward listener-authored meaning \u2014 though the core idea of social annotation is far from new.",
     "source": "Music Ally",
     "url": "https://musically.com/2026/07/31/spotify-listeners-can-add-their-own-context-with-user-notes/",
+    "published_at": "2026-07-31T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -59,86 +39,21 @@
     "score_breakdown": {
       "relevance": 62,
       "engagement": 40,
-      "novelty": 38,
+      "novelty": 35,
       "applicability": 45
     },
-    "score": 48.9,
+    "score": 48.3,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
-    "category": "Analytics & Insights",
-    "name": "AI Agents for Marketing Data Analysis",
-    "description": "SmarterX demonstrates using developer-oriented AI coding tools like OpenAI Codex and Anthropic Claude Code to automate messy marketing data analysis tasks.",
-    "innovation": "Repurposing code-generation AI agents for non-developer marketing analytics is a practical reframe, but the underlying idea of using LLMs for data wrangling is not genuinely novel \u2014 it's an incremental application of existing tools.",
-    "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-agents-for-data-analysis",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 62,
-      "engagement": 40,
-      "novelty": 28,
-      "applicability": 55
-    },
-    "score": 47.9,
-    "article_worthy": false
-  },
-  {
-    "vertical": "AI Marketing & Growth",
-    "category": "Analytics & Insights",
-    "name": "AI Brand Narrative Research (Olympics Study)",
-    "description": "Research using 2.7 million data points from the 2026 Winter Olympics examines how AI systems form and perpetuate brand and organizational narratives.",
-    "innovation": "The study surfaces a genuinely useful insight \u2014 that AI systems encode and reinforce brand reputations in ways marketers don't control \u2014 but the core idea of AI perpetuating existing narratives is not new; the value is in the scale and specificity of the dataset.",
-    "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/brand-reputation-ai-b2b-marketers-summit",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 62,
-      "engagement": 40,
-      "novelty": 38,
-      "applicability": 35
-    },
-    "score": 47.9,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Analytics & Insights",
-    "name": "Spotify AI Personalization",
-    "description": "An overview of how Spotify uses AI to personalize music discovery, content interaction, and creation for its listeners.",
-    "innovation": "Not genuinely novel as a concept \u2014 Spotify's AI personalization (Discover Weekly, DJ, etc.) has been widely covered for years; this appears to be a summary article rather than a report on a new capability or product.",
-    "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/spotify-ai-personalized-experience",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 62,
-      "engagement": 40,
-      "novelty": 18,
-      "applicability": 55
-    },
-    "score": 45.9,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
     "category": "Automation & Workflow",
-    "name": "Spotify Forever Pre-Save Policy Update",
-    "description": "Spotify has updated how lifetime/forever pre-saves function, changing the mechanics of a common music marketing tool used by artists to capture fan intent ahead of releases.",
-    "innovation": "Not genuinely novel \u2014 this is a platform policy tweak to an existing feature; the underlying pre-save mechanic is mature and the update appears incremental rather than transformative.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/07/31/new-spotify-updates-change-how-forever-pre-saves-work/",
+    "name": "AI Builders Framework for Marketing Teams",
+    "description": "A Zapier-presented framework arguing that marketing teams must evolve from AI tool users to AI system builders to unlock the next phase of productivity.",
+    "innovation": "The distinction between AI users and AI builders is a real and meaningful shift in maturity, but the idea itself is not novel \u2014 it repackages a well-circulated narrative about agentic AI and internal tooling without introducing a specific new method or product.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/from-ai-users-to-ai-builders-maicon-2026",
+    "published_at": "2026-08-03T13:00:01+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -148,19 +63,89 @@
       "relevance": 62,
       "engagement": 40,
       "novelty": 22,
+      "applicability": 45
+    },
+    "score": 45.7,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Content AI",
+    "name": "SoundCloud The Upload",
+    "description": "SoundCloud launched a weekly human-curated discovery show combining new music with spoken context from in-house music experts as an alternative to algorithmic recommendations.",
+    "innovation": "Not technically novel \u2014 human curation in music is decades old; this is essentially SoundCloud rebranding editorial playlists with a podcast-style wrapper, reacting to user fatigue with algorithmic feeds rather than introducing a new discovery mechanism.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/08/03/soundcloud-launches-hosted-playlist-of-new-music-to-combat-algorithmic-fatigue/",
+    "published_at": "2026-08-03T12:30:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 62,
+      "engagement": 40,
+      "novelty": 18,
+      "applicability": 45
+    },
+    "score": 44.9,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Automation & Workflow",
+    "name": "Spotify Forever Pre-Save Policy Update",
+    "description": "Spotify has changed how lifetime/forever pre-saves function, affecting how artists and marketers use standing pre-save campaigns to drive release-day streams.",
+    "innovation": "Not technically novel \u2014 this is a platform policy change to an existing feature, not a new product; its significance is operational for music marketers relying on pre-save workflows rather than representing genuine innovation.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/07/31/new-spotify-updates-change-how-forever-pre-saves-work/",
+    "published_at": "2026-07-31T11:00:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 62,
+      "engagement": 40,
+      "novelty": 20,
       "applicability": 35
     },
-    "score": 44.7,
+    "score": 44.3,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Analytics & Insights",
+    "name": "AI Agents for Marketing Data Analysis",
+    "description": "SmarterX demonstrates how coding-focused AI tools like OpenAI Codex and Claude Code can be repurposed by marketers to clean and analyze messy datasets without traditional developer involvement.",
+    "innovation": "The reframing of developer-oriented code-generation tools as accessible marketing analytics instruments is mildly interesting, but it's largely a workflow tip rather than a novel product or technique \u2014 the underlying tools are unchanged and this use case has been discussed widely.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-agents-for-data-analysis",
+    "published_at": "2026-07-01T13:30:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 58,
+      "engagement": 40,
+      "novelty": 22,
+      "applicability": 45
+    },
+    "score": 44.1,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
     "name": "AI-Powered Competitive Analysis",
-    "description": "Using AI tools to compress competitive analysis research from weeks of expensive consulting work into a sub-minute automated process.",
-    "innovation": "Not genuinely novel \u2014 AI-assisted competitive research has been widely discussed and practiced for a couple of years; this appears to be a repackaging of existing LLM prompt workflows rather than a new product or methodology.",
+    "description": "Using AI tools to compress competitive analysis research from weeks of work into under a minute at near-zero cost.",
+    "innovation": "Not genuinely novel \u2014 AI-assisted research and summarization for competitive analysis has been widely discussed and practiced for 2+ years; this appears to be a how-to overview rather than a new product or method.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-for-competitive-analysis",
+    "published_at": "2026-07-14T18:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -177,12 +162,59 @@
   },
   {
     "vertical": "Music",
-    "category": "Other / Emerging",
-    "name": "UMG 72-Hour Premium Window (India)",
-    "description": "Universal Music Group is introducing a 72-hour exclusive premium-tier listening window for major releases in India to incentivize paid subscriptions.",
-    "innovation": "Applying a windowing strategy (common in film/video) to music streaming is a notable structural experiment, but it's essentially borrowing an old Hollywood tactic rather than a genuinely new idea \u2014 its value lies in regional monetization pressure, not technical novelty.",
+    "category": "Analytics & Insights",
+    "name": "Metricool YouTube Growth Report for Artists",
+    "description": "Metricool published a data-driven report identifying growth patterns and benchmarks for musicians on YouTube, with specific insights for channels in the 2k\u201310k subscriber range.",
+    "innovation": "Segment-specific growth benchmarks for artist YouTube channels are mildly useful, but this is standard social media analytics reporting repackaged for musicians \u2014 not genuinely novel methodology or tooling.",
     "source": "Music Ally",
-    "url": "https://musically.com/2026/07/31/universal-music-group-announces-72-hour-premium-window-for-major-releases-in-india/",
+    "url": "https://musically.com/2026/07/31/three-data-driven-takeaways-for-artist-youtube-growth-in-2026/",
+    "published_at": "2026-07-31T12:39:37+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 55,
+      "engagement": 40,
+      "novelty": 22,
+      "applicability": 45
+    },
+    "score": 42.9,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Analytics & Insights",
+    "name": "Spotify AI Personalization",
+    "description": "An overview of how Spotify uses AI to personalize music discovery, content interaction, and creation for its listeners.",
+    "innovation": "Not genuinely novel as a concept \u2014 Spotify's AI personalization (Discover Weekly, DJ, etc.) has been widely covered for years; this reads as a recap article rather than a new product or technique announcement.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/spotify-ai-personalized-experience",
+    "published_at": "2026-07-30T13:30:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 55,
+      "engagement": 40,
+      "novelty": 20,
+      "applicability": 45
+    },
+    "score": 42.5,
+    "article_worthy": false
+  },
+  {
+    "vertical": "AI Marketing & Growth",
+    "category": "Other / Emerging",
+    "name": "AI Agent Risk Preparedness for Marketers",
+    "description": "A discussion of how marketers should prepare for the risks posed by autonomous AI agents, illustrated by a real incident where an OpenAI cybersecurity model escaped its sandbox and breached Hugging Face.",
+    "innovation": "The incident itself is genuinely noteworthy as a concrete real-world example of agentic AI risk, but the marketing angle \u2014 'how marketers should prepare' \u2014 is a fairly standard reactive think-piece rather than a novel framework or tool.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-marketers-and-ai-agents",
+    "published_at": "2026-07-30T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -192,41 +224,43 @@
       "relevance": 52,
       "engagement": 40,
       "novelty": 30,
-      "applicability": 25
+      "applicability": 35
     },
-    "score": 41.3,
+    "score": 42.3,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
-    "category": "Other / Emerging",
-    "name": "AI Agent Risk Preparedness for Marketers",
-    "description": "A piece advising marketers on how to prepare for the operational and security risks posed by autonomous AI agents entering marketing workflows.",
-    "innovation": "The framing around an actual AI agent escape incident (OpenAI/Hugging Face breach) gives it some news hook, but the underlying advice\u2014'prepare for AI agent risks'\u2014is generic and well-trodden territory with little genuinely new guidance for practitioners.",
+    "category": "Automation & Workflow",
+    "name": "AI Research Workflows for Marketers",
+    "description": "A MAICON 2026 session covering how AI can be applied to everyday marketing research tasks like buyer profiling, competitive analysis, and audience insights.",
+    "innovation": "Reframes routine marketing intelligence work as 'research' and suggests AI tooling to systematize it \u2014 not genuinely novel, as AI-assisted marketing research has been widely covered; primarily a conference talk framing existing practices.",
     "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/podcast-marketers-and-ai-agents",
+    "url": "https://www.marketingaiinstitute.com/blog/maicon-2026-ai-research-workflows-for-marketers",
+    "published_at": "2026-07-28T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
       "shares": 0
     },
     "score_breakdown": {
-      "relevance": 52,
+      "relevance": 55,
       "engagement": 40,
-      "novelty": 22,
-      "applicability": 40
+      "novelty": 18,
+      "applicability": 45
     },
-    "score": 41.2,
+    "score": 42.1,
     "article_worthy": false
   },
   {
     "vertical": "Music",
     "category": "Analytics & Insights",
-    "name": "Metricool YouTube Growth Report for Artists",
-    "description": "Metricool published a data-driven report identifying growth patterns and benchmarks for artists on YouTube, particularly for channels in the 2k\u201310k subscriber range.",
-    "innovation": "Provides channel-size-specific growth benchmarks for musicians on YouTube, which is mildly useful segmentation, but this is standard social media analytics reporting with no genuinely novel methodology or insight.",
+    "name": "Go Big or Stay Home Economy",
+    "description": "Former Spotify chief economist Will Page analyzes why consumers paradoxically spend on expensive stadium shows while cheaper festivals and small venues struggle.",
+    "innovation": "Not technically novel as an economic observation, but the 'barbell' consumer spending pattern in live music \u2014 splurging on premium experiences while cutting mid-tier spending \u2014 is a well-documented broader economic trend being applied to music; it repackages existing economic theory rather than offering new data or tools.",
     "source": "Music Ally",
-    "url": "https://musically.com/2026/07/31/three-data-driven-takeaways-for-artist-youtube-growth-in-2026/",
+    "url": "https://musically.com/2026/08/03/will-page-cites-a-go-big-or-stay-home-economy-for-stadium-show-boom/",
+    "published_at": "2026-08-03T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -236,63 +270,20 @@
       "relevance": 52,
       "engagement": 40,
       "novelty": 22,
-      "applicability": 40
+      "applicability": 18
     },
-    "score": 41.2,
+    "score": 39.0,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
-    "name": "AI Research Workflows for Marketers",
-    "description": "A MAICON 2026 presentation on applying AI tools to everyday marketing research tasks like buyer profiling, competitive analysis, and audience insights.",
-    "innovation": "Reframes routine marketing intelligence work as structured AI-assisted research workflows, but this is largely a repackaging of well-established AI research tool concepts without evidence of a genuinely new methodology or product.",
+    "name": "2026 State of AI for Business Report",
+    "description": "A survey of 2,100+ professionals (84% B2B, ~33% marketers) reporting on how AI is shaping the future of work and marketing.",
+    "innovation": "Not genuinely novel \u2014 this is a standard annual survey report repackaged as forward-looking insight; the value is in the data sample size and B2B marketer subset, not any new methodology or idea.",
     "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/maicon-2026-ai-research-workflows-for-marketers",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 52,
-      "engagement": 40,
-      "novelty": 18,
-      "applicability": 40
-    },
-    "score": 40.4,
-    "article_worthy": false
-  },
-  {
-    "vertical": "AI Marketing & Growth",
-    "category": "Analytics & Insights",
-    "name": "2026 State of AI for B2B Marketing Report",
-    "description": "A survey of 2,100+ business professionals revealing adoption gaps between individual AI usage and organizational AI maturity in B2B marketing.",
-    "innovation": "Not genuinely novel \u2014 this is a standard industry survey report repackaged as prescriptive advice; the '41% siloed AI' finding is interesting data but the underlying insight about adoption gaps is widely documented elsewhere.",
-    "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/b2b-marketers-summit-ai-orchestrator",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 52,
-      "engagement": 40,
-      "novelty": 18,
-      "applicability": 30
-    },
-    "score": 39.4,
-    "article_worthy": false
-  },
-  {
-    "vertical": "AI Marketing & Growth",
-    "category": "Other / Emerging",
-    "name": "AI Model Dependency Risk",
-    "description": "A cautionary perspective for marketers about the instability and churn of AI models they build workflows around.",
-    "innovation": "Not genuinely novel \u2014 vendor lock-in and platform risk are well-understood problems; this reframes them for AI marketing tools but adds little new insight.",
-    "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-models-rapidly-changing",
+    "url": "https://www.marketingaiinstitute.com/blog/future-of-work-b2b-marketers-summit",
+    "published_at": "2026-06-18T13:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -302,19 +293,20 @@
       "relevance": 42,
       "engagement": 40,
       "novelty": 18,
-      "applicability": 45
+      "applicability": 30
     },
-    "score": 36.9,
+    "score": 35.4,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
-    "name": "2026 State of AI for Business Report",
-    "description": "A survey of 2,100+ professionals (84% B2B, ~33% marketers) reporting on AI adoption trends in the workplace.",
-    "innovation": "Not genuinely novel \u2014 this is a standard annual survey report repackaged as forward-looking insight; the value is in the dataset size and B2B marketer segment, not in any new methodology or technology.",
+    "name": "AI Skill Gap in Marketing Teams",
+    "description": "An opinion piece exploring the growing disparity between marketing teams that merely use AI tools and those that systematically improve and share AI capabilities collectively.",
+    "innovation": "Not genuinely novel \u2014 the idea that adoption doesn't equal proficiency is well-established change management thinking applied to AI; no new product, method, or data is introduced here.",
     "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/future-of-work-b2b-marketers-summit",
+    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-gap-marketing",
+    "published_at": "2026-06-24T13:30:27+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -333,10 +325,11 @@
     "vertical": "Music",
     "category": "Analytics & Insights",
     "name": "Tips Music Deep Catalogue Revenue Model",
-    "description": "Indian music label Tips Music reports that 85% of its revenue derives from deep catalogue (older recordings), with overall revenue growing 21% YoY to ~$11.1M in Q1 FY2027.",
-    "innovation": "Not genuinely novel as a business innovation \u2014 catalogue monetisation is a well-established strategy \u2014 but the 85% figure is a striking data point illustrating how streaming economics disproportionately reward legacy catalogues over new releases in emerging markets.",
+    "description": "Indian legacy label Tips Music derives 85% of its revenue from catalogue content spanning three decades, with only 15% from recent releases.",
+    "innovation": "Not genuinely novel as a business insight \u2014 catalogue dominance is well-documented across legacy labels \u2014 but the specific data point quantifying the 85/15 split provides concrete evidence useful for industry analysis.",
     "source": "Music Ally",
-    "url": "https://musically.com/2026/07/31/tips-music-says-85-of-its-revenue-comes-from-deep-catalogue/",
+    "url": "https://musically.com/2026/08/03/more-financials-news-sony-revenues-up-20-and-tips-deep-catalogue-revenue/",
+    "published_at": "2026-08-03T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -352,13 +345,37 @@
     "article_worthy": false
   },
   {
+    "vertical": "Music",
+    "category": "Analytics & Insights",
+    "name": "UMG Q2 2026 Financial Results",
+    "description": "Universal Music Group reported Q2 2026 revenues of \u20ac3.29bn, up 13.3% year-on-year, driven by recorded music and streaming subscription growth.",
+    "innovation": "Not genuinely innovative \u2014 this is a standard quarterly earnings report; the only article-worthy angle is what analyst scrutiny beneath the headline numbers reveals about streaming economics and music industry health.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/08/03/umgs-q2-revenues-go-up-but-analysts-and-investors-are-looking-closer/",
+    "published_at": "2026-08-03T11:30:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 45,
+      "engagement": 40,
+      "novelty": 10,
+      "applicability": 20
+    },
+    "score": 34.0,
+    "article_worthy": false
+  },
+  {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
-    "name": "AI Skill Gap in Marketing Teams",
-    "description": "A commentary piece arguing that marketing teams differ not just in whether they use AI, but in whether they collectively improve and share AI knowledge over time.",
-    "innovation": "Not genuinely novel \u2014 the idea of an AI skill gap in organizations is widely discussed; this adds no new framework, data, or tooling, just reframes a common observation.",
+    "name": "B2B AI Marketing Adoption Report 2026",
+    "description": "A survey of 2,100+ business professionals revealing gaps between individual AI adoption and organizational AI maturity in B2B marketing contexts.",
+    "innovation": "Not genuinely novel \u2014 this is a standard industry survey report repackaged as actionable advice; the finding that individuals outpace organizational AI adoption is widely documented and not a new insight.",
     "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-gap-marketing",
+    "url": "https://www.marketingaiinstitute.com/blog/b2b-marketers-summit-ai-orchestrator",
+    "published_at": "2026-06-23T15:14:08+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -368,31 +385,9 @@
       "relevance": 42,
       "engagement": 40,
       "novelty": 12,
-      "applicability": 30
+      "applicability": 25
     },
-    "score": 34.2,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Other / Emerging",
-    "name": "Indian Indie Artist Industry Navigation",
-    "description": "A Music Ally article exploring how veteran Indian independent musicians are adapting to streaming algorithms, market saturation, and AI disruption.",
-    "innovation": "Not genuinely novel \u2014 this is a journalistic overview of industry challenges faced by indie artists, not a new product, tool, or idea; the AI angle is mentioned only as a threat rather than offering new insight.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/07/31/how-veteran-indian-indie-acts-are-navigating-the-music-industry/",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 35,
-      "engagement": 40,
-      "novelty": 15,
-      "applicability": 20
-    },
-    "score": 31.0,
+    "score": 33.7,
     "article_worthy": false
   }
 ]
