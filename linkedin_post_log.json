@@ -1,5 +1,5 @@
 {
-  "total_sent": 1,
+  "total_sent": 2,
   "history": [
     {
       "post_number": 1,
@@ -7,6 +7,13 @@
       "date": "2026-07-31",
       "framework_used": "1",
       "body_preview": "People think they make rational choices.\n\nThey don't.\n\nNeither do I \u2014 I once paid more for a coffee because the cup was "
+    },
+    {
+      "post_number": 2,
+      "topic": "Psychological Marketing",
+      "date": "2026-08-04",
+      "framework_used": "2",
+      "body_preview": "Ever notice how 'limited stock: 3 left' makes you want something you didn't care about 30 seconds ago?\n\nThat's scarcity "
     }
   ]
 }
