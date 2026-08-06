@@ -1,5 +1,5 @@
 {
-  "total_sent": 2,
+  "total_sent": 3,
   "history": [
     {
       "post_number": 1,
@@ -14,6 +14,13 @@
       "date": "2026-08-04",
       "framework_used": "2",
       "body_preview": "Ever notice how 'limited stock: 3 left' makes you want something you didn't care about 30 seconds ago?\n\nThat's scarcity "
+    },
+    {
+      "post_number": 3,
+      "topic": "Fintech",
+      "date": "2026-08-06",
+      "framework_used": "2",
+      "body_preview": "Global fintech investment dropped to $113B in 2023 \u2014 down from $196B the year before.\n\nEveryone called it a collapse.\n\nI"
     }
   ]
 }
