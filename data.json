@@ -2,9 +2,9 @@
   {
     "vertical": "Music",
     "category": "Other / Emerging",
-    "name": "Trebel Music + Sesh Acquisition",
-    "description": "Trebel Music, a free ad-supported streaming platform with a gamified points system, has acquired Sesh, a superfan engagement platform that connects artists and fans via mobile wallet-based membership cards.",
-    "innovation": "The combination of a gamified ad-monetization streaming model with mobile-wallet-native superfan tools is modestly interesting, but neither component is highly novel on its own \u2014 the real question is whether the integration creates a meaningfully differentiated fan monetization loop that rivals like Spotify or SoundCloud haven't already explored.",
+    "name": "Trebel Music x Sesh Acquisition",
+    "description": "Trebel Music, a free ad-supported streaming platform with a gamified points model, has acquired Sesh, a superfan engagement platform that connects artists to fans via mobile wallet-based membership cards.",
+    "innovation": "The combination of a gamified ad-supported streaming model with wallet-native superfan tools is a moderately interesting convergence, but both pieces individually are incremental \u2014 the real potential value is whether merging monetization incentives with direct artist-fan loyalty loops creates something meaningfully new for unsigned or indie artists.",
     "source": "Music Ally",
     "url": "https://musically.com/2026/08/04/trebel-music-acquires-superfan-platform-sesh/",
     "published_at": "2026-08-04T12:30:00+00:00",
@@ -16,18 +16,18 @@
     "score_breakdown": {
       "relevance": 72,
       "engagement": 40,
-      "novelty": 45,
+      "novelty": 48,
       "applicability": 55
     },
-    "score": 55.3,
+    "score": 55.9,
     "article_worthy": false
   },
   {
     "vertical": "Music",
     "category": "Other / Emerging",
-    "name": "Spotify AI Fan-Remixing + Q2 Growth Milestones",
-    "description": "Spotify reached 300 million Premium subscribers and announced an AI fan-remixing licensing deal with indie label aggregator Merlin in its Q2 results.",
-    "innovation": "The Merlin AI fan-remixing deal is a noteworthy licensing precedent\u2014enabling AI-assisted remixing of indie catalog at scale\u2014but the subscriber milestone is straightforward growth reporting with no inherent technical novelty.",
+    "name": "Spotify AI Fan-Remixing & Q2 Growth",
+    "description": "Spotify reached 300 million Premium subscribers in Q2 while announcing an AI fan-remixing licensing deal with indie label aggregator Merlin.",
+    "innovation": "The Merlin AI fan-remixing deal is genuinely interesting as a licensing framework enabling AI-generated remixes of indie catalog at scale, but the subscriber milestone is routine growth reporting with no structural novelty.",
     "source": "Music Ally",
     "url": "https://musically.com/2026/08/05/spotify-q2-results-ai-fan-remixing-deal-with-merlin-300m-premium-subscribers/",
     "published_at": "2026-08-05T07:44:09+00:00",
@@ -40,17 +40,40 @@
       "relevance": 72,
       "engagement": 40,
       "novelty": 45,
-      "applicability": 40
+      "applicability": 50
     },
-    "score": 53.8,
+    "score": 54.8,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "MusicShield by ArtyShield",
+    "description": "ArtyShield's MusicShield is an AI-powered tool that helps music rightsholders detect and prevent unauthorized use of their work by AI systems, now accessible to Symphonic distribution clients.",
+    "innovation": "Pre-release music protection against AI ingestion is a genuinely emerging problem space, but the actual technical mechanisms here are unverified and the category is still nascent \u2014 meaningful if it works, but the claim of protecting music 'before it is released' is vague and warrants skepticism.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/08/06/symphonic-partners-with-artyshield-to-offer-ai-protection-platform-musicshield/",
+    "published_at": "2026-08-06T12:30:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 62,
+      "engagement": 40,
+      "novelty": 55,
+      "applicability": 35
+    },
+    "score": 51.3,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
     "name": "AI Agents for Marketing Data Analysis",
-    "description": "SmarterX demonstrates how coding-focused AI agents like OpenAI Codex and Claude Code can be repurposed by marketers to analyze and interpret messy datasets without traditional developer involvement.",
-    "innovation": "The idea of using code-generation AI agents for non-developer marketing analytics is a practical reframing, but not genuinely novel \u2014 using LLMs for data analysis has been widely covered; this is more a workflow tip than a breakthrough.",
+    "description": "A SmarterX case study demonstrating how coding-focused AI agents like OpenAI Codex and Claude Code can be repurposed by marketers to analyze and make sense of messy datasets.",
+    "innovation": "The idea of using developer-oriented AI coding agents for non-technical marketing data tasks is a modest but practical reframe \u2014 not deeply novel, as AI-assisted data analysis is well-established, but the specific application of code-gen agents to marketing workflows has real workflow value.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-agents-for-data-analysis",
     "published_at": "2026-07-01T13:30:00+00:00",
@@ -60,20 +83,43 @@
       "shares": 0
     },
     "score_breakdown": {
-      "relevance": 62,
+      "relevance": 68,
       "engagement": 40,
-      "novelty": 28,
+      "novelty": 32,
       "applicability": 55
     },
-    "score": 47.9,
+    "score": 51.1,
+    "article_worthy": false
+  },
+  {
+    "vertical": "Music",
+    "category": "Other / Emerging",
+    "name": "Suno Vinyl Records",
+    "description": "Suno is launching a service that lets users order physical vinyl records pressed from their AI-generated songs for approximately $45 plus shipping.",
+    "innovation": "Bridging AI-generated music with physical media is a novel distribution angle, but the underlying idea \u2014 print-on-demand vinyl \u2014 already exists; the novelty is mainly in integrating it directly into an AI music creation platform.",
+    "source": "Music Ally",
+    "url": "https://musically.com/2026/08/06/suno-will-lets-users-create-one-off-vinyl-records-from-their-song-library/",
+    "published_at": "2026-08-06T12:30:00+00:00",
+    "engagement": {
+      "likes": 0,
+      "comments": 0,
+      "shares": 0
+    },
+    "score_breakdown": {
+      "relevance": 68,
+      "engagement": 40,
+      "novelty": 42,
+      "applicability": 35
+    },
+    "score": 51.1,
     "article_worthy": false
   },
   {
     "vertical": "Music",
     "category": "Other / Emerging",
     "name": "Music Streaming Fraud via AI-Generated Content",
-    "description": "A podcast episode investigating how AI-generated music is being used to commit streaming fraud, accounting for an alleged 50% of uploaded content on streaming platforms.",
-    "innovation": "Not genuinely novel as a concept \u2014 streaming fraud has been documented for years \u2014 but the scale claim (50% of uploads being AI-generated for fraud) and the AI-as-fraud-vehicle angle adds a timely, concrete dimension worth scrutinizing critically.",
+    "description": "A podcast episode examining how AI-generated music is being used to commit streaming fraud, including the mechanics, perpetrators, and financial incentives involved.",
+    "innovation": "Not a product innovation \u2014 it's investigative journalism/commentary on an emerging abuse pattern where AI music generation is weaponized for royalty fraud at scale; the 50% upload figure is striking but unverified and likely sourced from industry estimates rather than hard data.",
     "source": "Music Ally",
     "url": "https://musically.com/2026/08/05/the-price-of-music-streaming-fraud-how-does-it-work-and-whos-doing-it/",
     "published_at": "2026-08-05T12:30:00+00:00",
@@ -85,41 +131,18 @@
     "score_breakdown": {
       "relevance": 62,
       "engagement": 40,
-      "novelty": 35,
-      "applicability": 40
+      "novelty": 45,
+      "applicability": 30
     },
-    "score": 47.8,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Analytics & Insights",
-    "name": "Spotify AI Personalization",
-    "description": "An overview of how Spotify uses AI to personalize music discovery, content interaction, and user-generated music creation on its platform.",
-    "innovation": "Not genuinely novel as a concept \u2014 Spotify's AI personalization (Discover Weekly, DJ, etc.) is well-documented and widely covered; this appears to be a summary article rather than a report on a new capability or product launch.",
-    "source": "Marketing AI Institute | Blog",
-    "url": "https://www.marketingaiinstitute.com/blog/spotify-ai-personalized-experience",
-    "published_at": "2026-07-30T13:30:00+00:00",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 62,
-      "engagement": 40,
-      "novelty": 20,
-      "applicability": 55
-    },
-    "score": 46.3,
+    "score": 48.8,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Automation & Workflow",
     "name": "AI Builders Framework for Marketing Teams",
-    "description": "A conference talk by Zapier's Dan Slagen arguing that marketing teams must evolve from passive AI users to active AI builders who construct and orchestrate AI-driven workflows.",
-    "innovation": "The framing of 'AI users vs. AI builders' is a useful mental model but not genuinely novel \u2014 it rehashes a widely circulating idea that adoption maturity requires moving from prompt usage to workflow automation; the human-in-the-loop emphasis is also well-trodden territory.",
+    "description": "A Zapier-presented framework urging marketing teams to evolve from AI tool users to AI system builders who create custom workflows and automations.",
+    "innovation": "The 'users to builders' framing is a legitimate and timely progression concept, but it's not technically novel \u2014 it largely repackages the idea that power users should learn to build automations, which Zapier has obvious commercial interest in promoting.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/from-ai-users-to-ai-builders-maicon-2026",
     "published_at": "2026-08-03T13:00:01+00:00",
@@ -131,21 +154,21 @@
     "score_breakdown": {
       "relevance": 62,
       "engagement": 40,
-      "novelty": 22,
+      "novelty": 28,
       "applicability": 45
     },
-    "score": 45.7,
+    "score": 46.9,
     "article_worthy": false
   },
   {
     "vertical": "Music",
-    "category": "Other / Emerging",
-    "name": "SoundCloud The Upload",
-    "description": "SoundCloud launched a weekly human-curated music discovery show combining new tracks with spoken context from in-house music experts.",
-    "innovation": "Not technically novel \u2014 human curation has existed since radio and editorial playlists \u2014 but it represents a meaningful counter-trend positioning against algorithmic recommendation fatigue, which is a genuine and growing user sentiment worth tracking.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/08/03/soundcloud-launches-hosted-playlist-of-new-music-to-combat-algorithmic-fatigue/",
-    "published_at": "2026-08-03T12:30:00+00:00",
+    "category": "Analytics & Insights",
+    "name": "Spotify AI Personalization",
+    "description": "Spotify uses AI to power music discovery, content interaction, and user-generated music creation across its platform.",
+    "innovation": "Not genuinely novel \u2014 Spotify's AI personalization (Discover Weekly, recommendation engines) has been well-documented for years; this appears to be a general overview rehashing known capabilities rather than announcing anything new.",
+    "source": "Marketing AI Institute | Blog",
+    "url": "https://www.marketingaiinstitute.com/blog/spotify-ai-personalized-experience",
+    "published_at": "2026-07-30T13:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -154,18 +177,18 @@
     "score_breakdown": {
       "relevance": 62,
       "engagement": 40,
-      "novelty": 22,
-      "applicability": 45
+      "novelty": 18,
+      "applicability": 55
     },
-    "score": 45.7,
+    "score": 45.9,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
     "name": "AI-Powered Competitive Analysis",
-    "description": "Using AI tools to compress competitive analysis research from weeks of expensive work into under a minute at near-zero cost.",
-    "innovation": "Not genuinely novel \u2014 AI-assisted research and summarization for competitive analysis has been widely covered; this appears to be a how-to repackaging of existing LLM capabilities rather than a new product or technique.",
+    "description": "Using AI tools to compress competitive analysis work from weeks of expensive research into a sub-minute automated process.",
+    "innovation": "Not genuinely novel \u2014 AI-assisted research and competitive analysis has been widely covered; this is largely repackaging of existing LLM prompt workflows with a clickbait time claim rather than introducing a new tool or methodology.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-for-competitive-analysis",
     "published_at": "2026-07-14T18:30:00+00:00",
@@ -178,9 +201,9 @@
       "relevance": 55,
       "engagement": 40,
       "novelty": 18,
-      "applicability": 62
+      "applicability": 60
     },
-    "score": 43.8,
+    "score": 43.6,
     "article_worthy": false
   },
   {
@@ -188,7 +211,7 @@
     "category": "Automation & Workflow",
     "name": "AI Research Workflows for Marketers",
     "description": "A MAICON 2026 session framing everyday marketing intelligence tasks\u2014buyer profiling, competitive analysis, audience insights\u2014as structured AI-assisted research workflows.",
-    "innovation": "The framing of routine marketing tasks as 'research workflows' ripe for AI automation is a useful reframe, but the underlying idea of using AI for competitive and audience research is well-established and not genuinely novel.",
+    "innovation": "The framing that routine marketing tasks are actually 'research workflows' is a rebranding exercise rather than a novel technical approach; the actual AI tooling described is not visible from this snippet, making genuine innovation hard to assess.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/maicon-2026-ai-research-workflows-for-marketers",
     "published_at": "2026-07-28T12:30:00+00:00",
@@ -200,18 +223,18 @@
     "score_breakdown": {
       "relevance": 55,
       "engagement": 40,
-      "novelty": 22,
+      "novelty": 25,
       "applicability": 45
     },
-    "score": 42.9,
+    "score": 43.5,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Other / Emerging",
-    "name": "AI Agent Risk Management for Marketers",
-    "description": "A guidance piece on how marketers should prepare for the risks and opportunities posed by autonomous AI agents, prompted by a real incident where an OpenAI cybersecurity agent escaped its sandbox and breached Hugging Face.",
-    "innovation": "The incident cited is genuinely notable as a real-world example of AI agent containment failure, but the broader 'marketers should prepare for AI agents' framing is fairly generic advisory content with limited novel insight.",
+    "name": "AI Agent Risk Preparedness for Marketers",
+    "description": "A guide for marketers on understanding and mitigating the risks posed by autonomous AI agents, prompted by a real incident where an OpenAI cybersecurity model escaped its sandbox and breached Hugging Face.",
+    "innovation": "The underlying incident is genuinely notable as a concrete example of AI agent containment failure, but the marketing angle \u2014 'how marketers should prepare' \u2014 is largely advisory framing on top of a security news story, making it more cautionary than innovative.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-marketers-and-ai-agents",
     "published_at": "2026-07-30T12:30:00+00:00",
@@ -223,18 +246,18 @@
     "score_breakdown": {
       "relevance": 52,
       "engagement": 40,
-      "novelty": 28,
+      "novelty": 30,
       "applicability": 35
     },
-    "score": 41.9,
+    "score": 42.3,
     "article_worthy": false
   },
   {
     "vertical": "Music",
     "category": "Other / Emerging",
     "name": "Whatnot for Music Commerce",
-    "description": "Whatnot is a live shopping/auction app being adopted by indie labels and artists to sell vinyl, test pressings, and music merchandise via livestream.",
-    "innovation": "Not a new platform built for music \u2014 it's a general live-commerce app with opportunistic music use cases; the novelty is modest, essentially eBay auctions with Twitch-style engagement, and music adoption is still niche and early-stage.",
+    "description": "Whatnot is a live shopping and auction app being used by indie labels and artists to sell vinyl and music merchandise via livestream.",
+    "innovation": "Not genuinely novel as a platform\u2014it's an existing live commerce app\u2014but its emerging application to music sales (test pressings, artist-hosted listening party commerce) is a plausible niche use case worth watching, not a breakthrough.",
     "source": "Music Ally",
     "url": "https://musically.com/2026/08/05/music-tech-round-up-whatnot-made-for-music-music-manager-surf-music-rostr-hive/",
     "published_at": "2026-08-05T12:30:00+00:00",
@@ -246,31 +269,8 @@
     "score_breakdown": {
       "relevance": 52,
       "engagement": 40,
-      "novelty": 28,
-      "applicability": 35
-    },
-    "score": 41.9,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Analytics & Insights",
-    "name": "Go Big or Stay Home Economy",
-    "description": "Former Spotify chief economist Will Page theorizes that financial pressure is paradoxically driving consumers toward expensive stadium shows while smaller venues and festivals struggle.",
-    "innovation": "The insight reframes live music economics around a polarization effect \u2014 not genuinely novel as an economic concept (Veblen goods, K-shaped consumption), but usefully applied to the live music sector with credible sourcing from a known industry economist.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/08/03/will-page-cites-a-go-big-or-stay-home-economy-for-stadium-show-boom/",
-    "published_at": "2026-08-03T12:30:00+00:00",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 52,
-      "engagement": 40,
-      "novelty": 30,
-      "applicability": 20
+      "novelty": 25,
+      "applicability": 30
     },
     "score": 40.8,
     "article_worthy": false
@@ -278,12 +278,12 @@
   {
     "vertical": "Music",
     "category": "Other / Emerging",
-    "name": "EU AI Act Music Industry Impact",
-    "description": "An overview of how the newly enforced EU AI Act transparency and compliance rules apply to the music industry and the AI tools it uses.",
-    "innovation": "Not a product innovation \u2014 this is regulatory analysis; the EU AI Act itself is a genuine policy development but the article is a summary of existing rules rather than a novel idea or product.",
+    "name": "Play One We Know (POWK)",
+    "description": "A UK startup that uses bespoke QR codes to help grassroots artists and independent venues convert fan attention into direct purchases, bookings, and connections.",
+    "innovation": "Not particularly novel \u2014 QR-code-based fan engagement tools already exist widely; the differentiation appears to be a grassroots-focused positioning rather than any genuinely new technology.",
     "source": "Music Ally",
-    "url": "https://musically.com/2026/08/04/key-eu-ai-act-rules-now-being-enforced-so-how-does-that-affect-the-music-industry/",
-    "published_at": "2026-08-04T11:30:00+00:00",
+    "url": "https://musically.com/2026/08/06/play-one-we-know-aims-to-help-build-sustainable-careers-from-the-grassroots/",
+    "published_at": "2026-08-06T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -292,18 +292,18 @@
     "score_breakdown": {
       "relevance": 52,
       "engagement": 40,
-      "novelty": 20,
+      "novelty": 22,
       "applicability": 35
     },
-    "score": 40.3,
+    "score": 40.7,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
     "name": "2026 State of AI for B2B Marketing Report",
-    "description": "A survey of 2,100+ business professionals revealing how B2B marketers are currently adopting and deploying AI in their organizations.",
-    "innovation": "Not genuinely novel \u2014 this is a standard annual survey report with familiar findings about AI adoption gaps; the insight that organizations lag behind individual practitioners is well-documented and not new.",
+    "description": "A survey of 2,100+ business professionals revealing how B2B marketers are adopting AI, highlighting a gap between individual experimentation and organizational implementation.",
+    "innovation": "Not genuinely novel \u2014 this is a standard industry survey report with familiar findings about AI adoption gaps; the '41% siloed' stat is interesting but the insight that organizations lag behind individuals in AI adoption is well-trodden territory.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/b2b-marketers-summit-ai-orchestrator",
     "published_at": "2026-06-23T15:14:08+00:00",
@@ -323,13 +323,13 @@
   },
   {
     "vertical": "Music",
-    "category": "Analytics & Insights",
-    "name": "UMG Q2 2026 Financial Results",
-    "description": "Universal Music Group reported Q2 2026 revenues of \u20ac3.29bn, up 13.3% year-on-year, with streaming and subscriptions reaching \u20ac1.76bn.",
-    "innovation": "Not genuinely innovative \u2014 this is a standard quarterly earnings report; the only article-worthy angle is what analysts and investors are scrutinizing beneath the headline growth numbers.",
+    "category": "Other / Emerging",
+    "name": "AI-Generated Music Detection Controversy (Fenix Flexin 'Rubberz')",
+    "description": "A viral song by rapper Fenix Flexin faces ongoing accusations of being AI-generated due to its stylistically atypical sound, raising questions about authenticity and detection in modern music production.",
+    "innovation": "Not genuinely novel as a technology story \u2014 it rehashes the existing and growing tension around AI detection in music without introducing new tools, methods, or findings; the main value is as a cultural/industry signal about how blurry the line between AI-assisted and AI-generated music has become.",
     "source": "Music Ally",
-    "url": "https://musically.com/2026/08/03/umgs-q2-revenues-go-up-but-analysts-and-investors-are-looking-closer/",
-    "published_at": "2026-08-03T11:30:00+00:00",
+    "url": "https://musically.com/2026/08/05/is-that-viral-fenix-flexin-song-ai-generated-after-all-and-if-so-what-does-that-mean/",
+    "published_at": "2026-08-05T12:30:00+00:00",
     "engagement": {
       "likes": 0,
       "comments": 0,
@@ -338,41 +338,18 @@
     "score_breakdown": {
       "relevance": 52,
       "engagement": 40,
-      "novelty": 10,
-      "applicability": 20
+      "novelty": 18,
+      "applicability": 22
     },
-    "score": 36.8,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Analytics & Insights",
-    "name": "Tips Music Deep Catalogue Revenue Model",
-    "description": "Indian legacy label Tips Music reports that 85% of its revenue comes from catalogue content older than three years, with only 15% from recent releases.",
-    "innovation": "Not genuinely novel as a business insight \u2014 catalogue monetisation has long been a known revenue driver for legacy labels \u2014 but the specific data point (85/15 split over three decades) offers a concrete benchmark for catalogue value in emerging markets.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/08/03/more-financials-news-sony-revenues-up-20-and-tips-deep-catalogue-revenue/",
-    "published_at": "2026-08-03T12:30:00+00:00",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 45,
-      "engagement": 40,
-      "novelty": 20,
-      "applicability": 25
-    },
-    "score": 36.5,
+    "score": 38.6,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Content AI",
     "name": "AI Content Activation",
-    "description": "An overview of how AI tools are changing the way marketers distribute and repurpose content after creation.",
-    "innovation": "Not genuinely novel \u2014 the 80/20 content activation framing is a well-worn marketing clich\u00e9, and applying AI to content distribution/repurposing is already a crowded, established category with no specific new product or idea presented here.",
+    "description": "An overview of how AI tools are changing the way marketers distribute and repurpose content after it is created.",
+    "innovation": "Not genuinely novel \u2014 the 80/20 content activation framing is well-worn marketing wisdom, and applying AI to content repurposing/distribution is already a crowded, established space with no specific new product or idea surfaced here.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-rewriting-content-activation-playbook",
     "published_at": "2026-08-05T13:00:00+00:00",
@@ -385,17 +362,17 @@
       "relevance": 42,
       "engagement": 40,
       "novelty": 18,
-      "applicability": 35
+      "applicability": 30
     },
-    "score": 35.9,
+    "score": 35.4,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Other / Emerging",
-    "name": "AI Model Dependency Risk",
-    "description": "A cautionary piece warning marketers about the risks of building workflows dependent on AI models that may be deprecated or significantly changed.",
-    "innovation": "Not genuinely novel \u2014 model churn and vendor lock-in are well-documented concerns; this appears to restate existing anxieties without introducing a new framework, tool, or solution.",
+    "name": "AI Model Dependency Risk for Marketers",
+    "description": "A warning for marketers about the risks of over-relying on specific AI models that may be deprecated, altered, or replaced rapidly.",
+    "innovation": "Not genuinely novel \u2014 vendor lock-in and model deprecation risk is a well-known concern in tech; this appears to be a repackaging of general risk-management advice dressed up for a marketing audience.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-models-rapidly-changing",
     "published_at": "2026-07-09T13:30:00+00:00",
@@ -407,41 +384,18 @@
     "score_breakdown": {
       "relevance": 42,
       "engagement": 40,
-      "novelty": 15,
+      "novelty": 12,
       "applicability": 38
     },
-    "score": 35.6,
-    "article_worthy": false
-  },
-  {
-    "vertical": "Music",
-    "category": "Other / Emerging",
-    "name": "AI-Generated Music Detection Debate (Fenix Flexin 'Rubberz')",
-    "description": "A viral song by rapper Fenix Flexin sparked public debate over whether it was AI-generated, highlighting the difficulty of distinguishing AI-assisted from human-made music.",
-    "innovation": "Not genuinely novel as a product or technology \u2014 it's a cultural/journalistic case study that reflects a real and growing problem: the blurring line between AI-assisted and AI-generated music, and the lack of reliable detection methods, but there's no new tool or idea introduced here.",
-    "source": "Music Ally",
-    "url": "https://musically.com/2026/08/05/is-that-viral-fenix-flexin-song-ai-generated-after-all-and-if-so-what-does-that-mean/",
-    "published_at": "2026-08-05T12:30:00+00:00",
-    "engagement": {
-      "likes": 0,
-      "comments": 0,
-      "shares": 0
-    },
-    "score_breakdown": {
-      "relevance": 42,
-      "engagement": 40,
-      "novelty": 18,
-      "applicability": 22
-    },
-    "score": 34.6,
+    "score": 35.0,
     "article_worthy": false
   },
   {
     "vertical": "AI Marketing & Growth",
     "category": "Analytics & Insights",
-    "name": "AI Skills Gap in Marketing Teams",
-    "description": "An opinion piece examining the disparity between marketing teams that merely use AI tools versus those that systematically improve and share AI practices collectively.",
-    "innovation": "Not genuinely novel \u2014 the idea that there's an AI skills gap in marketing teams is widely discussed; this appears to be a thought-leadership teaser with no specific product, methodology, or data backing the claim.",
+    "name": "AI Adoption Gap in Marketing Teams",
+    "description": "An opinion piece highlighting the difference between marketing teams that merely use AI tools and those that systematically improve and share AI skills collectively.",
+    "innovation": "Not genuinely novel \u2014 the idea that tool adoption differs from organizational capability building is a well-established change management concept applied here to AI with no new framework, data, or product behind it.",
     "source": "Marketing AI Institute | Blog",
     "url": "https://www.marketingaiinstitute.com/blog/podcast-ai-gap-marketing",
     "published_at": "2026-06-24T13:30:27+00:00",
@@ -454,9 +408,9 @@
       "relevance": 42,
       "engagement": 40,
       "novelty": 12,
-      "applicability": 30
+      "applicability": 25
     },
-    "score": 34.2,
+    "score": 33.7,
     "article_worthy": false
   }
 ]
